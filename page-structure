@@ -1,0 +1,62 @@
+- COMPONENTS
+
+  - [Header]
+    - Navigation
+    - Contact
+
+  - [Page Title]
+    - Page Name
+    - Meta
+      - Copy
+      - Tags
+
+  - [Full Width Gallery]
+    - Image(s)
+      - Desktop Breakpoint ?
+      - Tablet Breakpoint ?
+      - Mobile Breakpoint ?
+    - Arrows
+    - Arrows Toggle
+      - IF we hide the arrows, display images side by side in a gallery and centered
+    - Pagination
+    - Caption
+    - Caption Toggle
+    - Background Colour Picker
+
+  - [Two Column Copy]
+    - Copy (col 1)
+      - Alignment
+      - Header
+      - Sub-Header
+      - Big Copy
+      - Paragraph
+      - Position List
+        - Position Selector
+    - Copy (col 2)
+
+  - [Thumbnail Gallery]
+    - Image(s)
+      - 2-column toggle
+    - Caption Toggle
+    - Variable Sizing (https://www.youtube.com/watch?v=OkCnhz__aFM)
+    - Background Colour Picker
+
+  - [Thumbnail Gallery Filter]
+    - List of Tags
+    - Toggle Filters on and Off
+
+  - [Dynamic List]
+    - Sub-Header
+    - Header
+    - Copy
+
+  - [Small Gallery]
+    - Images
+    - Arrows
+    - Pagination
+    - Caption
+    - Caption Toggle
+
+  - [Credits List]
+    - Name
+    - Role

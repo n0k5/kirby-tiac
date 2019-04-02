@@ -1,0 +1,214 @@
+/*======================================================================
+    IMPORTING
+======================================================================*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+/* todo: ask Andy for Akkurat license / font files */
+
+/*======================================================================
+    GLOBAL VARIABLES AND OVERRIDES
+======================================================================*/
+:root {
+  --content-width: 80rem;
+
+  /* Colours */
+  --color--primary: #fff;
+  --color--black: #191919;
+  --color--dkGrey: #3c3c3b;
+
+  /* Spacing */
+  --riddim: 1.000rem;
+}
+
+*,
+*:after,
+*:before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*======================================================================
+    MAIN ELEMENT STYLING
+======================================================================*/
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  letter-spacing: -0.11px;
+  line-height: 1.2;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: var(--color--primary);
+  text-decoration: none;
+}
+
+strong, b {
+  font-weight: 500;
+}
+
+img {
+  width: 100%;
+}
+
+/*======================================================================
+    CONTAINER
+======================================================================*/
+
+.container {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  display: grid;
+}
+
+/*======================================================================
+    HEADER
+======================================================================*/
+
+.header {
+  background-color: var(--color--black);
+  padding: calc(var(--riddim) * 2);
+  display: flex;
+}
+
+.header a {
+  position: relative;
+  font-size: .750rem;
+  color: var(--color--primary);
+}
+
+.header .logo {
+  align-self: flex-end;
+  text-align: right;
+  color: var(--color--primary);
+}
+
+.menu a {
+  margin-right: calc(var(--riddim) * 6);
+}
+
+.menu a:last-of-type {
+  margin-right: 0;
+}
+
+.menu a[aria-current] {
+  color: var(--color--primary);
+  font-weight: bold;
+}
+
+@media screen and (min-width: 40rem) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .menu {
+    margin-right: -.75rem;
+  }
+}
+
+/*======================================================================
+    pageTitle STYLING
+======================================================================*/
+
+.pageTitle {
+  grid-template-columns: 3fr 1fr;
+  padding: calc(var(--riddim) * 4) 0;
+}
+
+.pageTitle__pageName h1 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--color--dkGrey);
+}
+
+.pageTitle__meta {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: right;
+  color: var(--color--dkGrey);
+}
+
+/*======================================================================
+    EVERYTHING ELSE I HAVEN'T SORTED YET
+    todo: check these are actually used anywhere
+======================================================================*/
+
+.tags {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+  font-size: .75rem;
+  font-weight: 600;
+}
+
+.text {
+  line-height: 1.5em;
+}
+.text p,
+.text figure,
+.text ul,
+.text ol {
+  margin-bottom: 1.5em;
+}
+.text h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.text > *:first-child {
+  margin-top: 0;
+}
+.text a {
+  position: relative;
+  white-space: nowrap;
+  font-weight: 500;
+  z-index: 1;
+  display: inline-block;
+  border-bottom: 2px solid #000;
+}
+.text figure {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.text img {
+  width: 100%;
+}
+
+.footer {
+  padding: 1.5rem 5vw 10vh;
+  text-align: center;
+  max-width: var(--content-width);
+  margin: 0 auto;
+  line-height: 1.5em;
+}
+.footer a {
+  display: inline-block;
+  font-size: .875rem;
+}
+.footer > a {
+  margin-bottom: 1.5rem;
+  border-top: 2px solid #000;
+  width: 16.5rem;
+  padding-top: .5rem;
+}
+
+.social a {
+  margin: 0 .75rem;
+  padding: .5rem 1rem;
+  border: 2px solid #000;
+  width: 7.5rem;
+}
+.social a:hover {
+  background: #000;
+  color: #fff;
+}

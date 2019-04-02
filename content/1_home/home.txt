@@ -1,0 +1,60 @@
+Title: Information
+
+----
+
+Content: 
+
+- 
+  gallery:
+    - projects/ocean
+    - projects/mountains
+    - projects/plants
+    - projects/waterfall
+  captions: 'true'
+  carousel: 'true'
+  color: null
+  toggle: true
+  _key: fullWidthGallery
+  _uid: fullWidthGallery_1552334731566_297
+
+----
+
+Contactemail: ac@tiac.design
+
+----
+
+Bio: Designer, art director, business owner, author, speaker, curator, photographer.
+
+----
+
+Sociallinks: 
+
+- 
+  title: Instagram
+  url: >
+    https://www.instagram.com/thisisandycooke
+  icon: fa-instagram
+- 
+  title: Twitter
+  url: https://twitter.com/thisisandycooke
+  icon: fa-twitter
+- 
+  title: LinkedIn
+  url: https://linkedin.com
+  icon: fa-linkedin
+- 
+  title: Behance
+  url: https://www.behance.net/thisisandycooke
+  icon: fa-behance
+
+----
+
+Text: 
+
+----
+
+Email: 
+
+----
+
+Textarea: 
