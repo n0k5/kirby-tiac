@@ -14,12 +14,14 @@
 
   <div class="page">
     <header class="header">
-      <nav id="menu" class="menu">
-        <?php foreach ($site->children()->listed() as $item): ?>
-        <?= $item->title()->link() ?>
-        <?php endforeach ?>
-      </nav>
+      <div class="container">
+        <nav id="menu" class="menu">
+          <?php foreach ($site->children()->listed() as $item): ?>
+          <?= $item->title()->link() ?>
+          <?php endforeach ?>
+        </nav>
 
-      <a class="logo" href="mailto:<?= $page->contactEmail() ?>"><?= $page->contactEmail() ?></a>
+        <a class="logo" href="mailto:<?= $page->contactEmail() ?>"><?= $page->contactEmail() ?></a>
+      </div>
     </header>
 

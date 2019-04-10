@@ -1,6 +1,10 @@
+Title: Mountains
+
+----
+
 Cover: 
 
-- probably-photoshopped.jpg
+- that-apple-mountain.jpg
 
 ----
 
@@ -13,7 +17,3 @@ Description: Mountains — where do they come from.
 ----
 
 Tags: mountains, peak nature
-
-----
-
-Title: Mountains

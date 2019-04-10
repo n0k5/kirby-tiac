@@ -1,6 +1,10 @@
+Title: Landscape
+
+----
+
 Cover: 
 
-- that-green-looks-fake.jpg
+- clouds-eat-mountain.jpg
 
 ----
 
@@ -13,7 +17,3 @@ Description:
 ----
 
 Tags: landscape, nature
-
-----
-
-Title: Landscape

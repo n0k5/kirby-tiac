@@ -1,6 +1,10 @@
+Title: Animals
+
+----
+
 Cover: 
 
-- peter-fox.jpg
+- dumbo.jpg
 
 ----
 
@@ -13,7 +17,3 @@ Description: What does the fox say?
 ----
 
 Tags: animals
-
-----
-
-Title: Animals

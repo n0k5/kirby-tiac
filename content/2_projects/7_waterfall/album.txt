@@ -1,6 +1,10 @@
+Title: Waterfall
+
+----
+
 Cover: 
 
-- the-fall-is-lava.jpg
+- lots-of-water.jpg
 
 ----
 
@@ -13,7 +17,3 @@ Description: Don't go chasing waterfalls
 ----
 
 Tags: water, falls, down
-
-----
-
-Title: Waterfall

@@ -1,6 +1,10 @@
+Title: Ocean
+
+----
+
 Cover: 
 
-- island-from-above.jpg
+- smashed-by-waves.jpg
 
 ----
 
@@ -13,7 +17,3 @@ Description: Blue with lots of fish
 ----
 
 Tags: ocean, water, blue
-
-----
-
-Title: Ocean

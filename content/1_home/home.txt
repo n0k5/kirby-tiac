@@ -6,10 +6,9 @@ Content:
 
 - 
   gallery:
-    - projects/ocean
-    - projects/mountains
-    - projects/plants
+    - projects/landscape
     - projects/waterfall
+    - projects/animals
   captions: 'true'
   carousel: 'true'
   color: null
