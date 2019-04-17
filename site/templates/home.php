@@ -12,8 +12,6 @@
   </section>
 
   <section class="builderContent">
-    <!-- <?php dump($page) ?> -->
-
     <?php
       foreach($page->content()->content()->toBuilderBlocks() as $block):
         snippet('blocks/' . $block->_key(), array('data' => $block));

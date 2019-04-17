@@ -14,6 +14,7 @@
   --color--primary: #fff;
   --color--black: #191919;
   --color--dkGrey: #3c3c3b;
+  --color--ltGrey: #d8d8d8;
 
   /* Spacing */
   --riddim: 1.000rem;
@@ -26,6 +27,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 
 /*======================================================================
     MAIN ELEMENT STYLING
@@ -55,6 +57,78 @@ img {
   width: 100%;
 }
 
+
+/*======================================================================
+    FLICKITY
+======================================================================*/
+
+.flickity-button {
+  width: 56px !important;
+  height: 56px !important;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  background-color: var(--color--primary) !important;
+  opacity: 1 !important;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--color-black);
+}
+
+.flickity-button.previous {
+  left: 96px !important;
+}
+
+.flickity-button.previous:before {
+  content: '↵';
+}
+
+.flickity-button.next {
+  right: 96px !important;
+}
+
+.flickity-button.next:before {
+  content: '↳';
+}
+
+.flickity-button svg {
+  display: none;
+}
+
+.flickity-button:disabled {
+  border: solid 1px var(--color--primary);
+  background: transparent !important;
+  opacity: 1 !important;
+  color: var(--color--primary);
+  box-shadow: none;
+}
+
+.flickity-page-dots {
+  bottom: -42px !important;
+}
+
+.flickity-page-dots .dot {
+  width: 29px !important;
+  height: 1px !important;
+  border-radius: 0 !important;
+  background: var(--color--ltGrey) !important;
+  opacity: 1 !important;
+}
+
+.flickity-page-dots .is-selected {
+  background-color: var(--color--black) !important;
+}
+
+.flickity-caption {
+  max-width: 296px;
+  width: 100%;
+  font-size: 12px;
+  line-height: 1.33;
+  text-align: center;
+  color: rgba(25, 25, 25, 0.5);
+  margin: 70px auto 0 auto;
+}
+
+
 /*======================================================================
     CONTAINER
 ======================================================================*/
@@ -65,6 +139,16 @@ img {
   display: grid;
 }
 
+
+/*======================================================================
+    MAIN
+======================================================================*/
+
+main {
+  padding-top: 83px;
+}
+
+
 /*======================================================================
     HEADER
 ======================================================================*/
@@ -72,6 +156,8 @@ img {
 .header {
   background-color: var(--color--black);
   padding: calc(var(--riddim) * 2);
+  position: fixed;
+  width: 100%;
 }
 
 .header .container {
@@ -113,6 +199,7 @@ img {
   }
 }
 
+
 /*======================================================================
     pageTitle STYLING
 ======================================================================*/
@@ -139,30 +226,28 @@ img {
   color: var(--color--dkGrey);
 }
 
+
 /*======================================================================
     BUILDER BLOCK
     👇
     fullWidthGallery
 ======================================================================*/
 
-.fullWidthGallery {
-  height: 694px;
-}
-
-.fullWidthGallery__slides {
-  display: flex;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-}
-
 .fullWidthGallery__slides div {
-  flex-shrink: 0;
+  line-height: 0;
+  width: 100%;
 }
+
+/* @media screen and (min-width: 1280px) {
+  .fullWidthGallery__slides {
+    height: 800px
+  }
+} */
 
 
 /*======================================================================
     EVERYTHING ELSE I HAVEN'T SORTED YET
-    todo: check these are actually used anywhere
+    todo: check these are actually used anywhere (probably not)
 ======================================================================*/
 
 .tags {

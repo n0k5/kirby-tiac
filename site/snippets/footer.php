@@ -12,5 +12,6 @@
     <?php endif ?>
   </footer> -->
 
+  <?= js('assets/js/app.js') ?>
 </body>
 </html>

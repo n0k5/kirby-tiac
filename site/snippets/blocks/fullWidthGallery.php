@@ -3,18 +3,20 @@
     <!-- todo: use srcset here -->
     <!-- https://getkirby.com/docs/guide/templates/resize-images-on-the-fly#responsive-images -->
 
-    <!-- <?php dump($page) ?> -->
     <?php foreach($data->gallery() as $items): ?>
       <?php foreach($items as $item): ?>
-        <?php
-          if($page->carousel('true')) {
-            echo page($item)->cover()->crop(1280, 700, 'center');
-          } else {
-            echo 'this is not a carousel, render it as a gallery instead...';
-          }
-        ?>
+
+          <?php
+            if($page->carousel('true')) {
+              echo page($item)->cover()->crop(1280, 694, 'center');
+            } else {
+              echo 'this is not a carousel, render it as a gallery instead...';
+            }
+          ?>
+
       <?php endforeach; ?>
     <?php endforeach; ?>
-
   </div>
+
+  <p class="flickity-caption">test</p>
 </div>
