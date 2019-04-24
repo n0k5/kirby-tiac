@@ -1,0 +1,23 @@
+label: Two Column Copy
+preview:
+  snippet: blocks/twoColumnCopy
+  css: /assets/css/index.css
+fields:
+  primaryCopy:
+    type: textarea
+    label: Primary Copy
+    size: small
+    buttons:
+      - headlines
+      - link
+      - email
+      - ul
+  secondaryCopy:
+    type: textarea
+    label: Secondary Copy
+    size: small
+    buttons:
+      - headlines
+      - link
+      - email
+      - ul

@@ -15,6 +15,41 @@ Content:
   toggle: true
   _key: fullWidthGallery
   _uid: fullWidthGallery_1552334731566_297
+- 
+  primarycopy: |
+    ### Designing and directing across identity, screen & print
+    
+    # A British Art Director in Switzerland
+    
+    ## Currently helping to create the vision of how modern education looks and feels across the world at EF in Lucerne, CH. Into business, culture, art, photography, reading and writing.
+  secondarycopy: |
+    ### Capabilities
+    
+    Identity Design
+    Design for Screen
+    Art Direction
+    Design for Print
+    Photography
+    Motion Design
+    Filmography
+    Project Management
+    Curation
+    Brand Strategy
+  _key: twoColumnCopy
+  _uid: twoColumnCopy_1556124858606_256
+- 
+  primarycopy: |
+    # A case for generalism
+    
+    Absolutely. To be honest, I don’t really want to specify. I don’t want to focus just yet. I want to have fun and try my hand at creating as much for as much, as much as I possibly can (clearly, copywriting is not a strong suit). I don’t think this translates to being bad at a lot of things. It doesn’t mean I’m necessarily good at a lot of things, either. I’ve failed, a lot. I’ve made mistakes. I continue to do so to this day. As the cliche goes, I learn from them and keep moving forward. Always progressing.
+  secondarycopy: |
+    ### Honours
+    
+    BA Hons First Class
+    Staffordshire University
+    2007–2010
+  _key: twoColumnCopy
+  _uid: twoColumnCopy_1556127829273_444
 
 ----
 

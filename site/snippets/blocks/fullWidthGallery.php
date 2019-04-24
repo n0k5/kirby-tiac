@@ -18,5 +18,5 @@
     <?php endforeach; ?>
   </div>
 
-  <p class="flickity-caption">test</p>
+  <p class="flickity-caption"></p>
 </div>

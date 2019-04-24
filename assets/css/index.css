@@ -159,6 +159,7 @@ main {
   padding: calc(var(--riddim) * 2) 0;
   position: fixed;
   width: 100%;
+  z-index: 9999;
 }
 
 .header .container {
@@ -202,7 +203,7 @@ main {
 
 
 /*======================================================================
-    pageTitle STYLING
+    pageTitle BLOCK
 ======================================================================*/
 
 .pageTitle {
@@ -218,7 +219,7 @@ main {
     color: var(--color--dkGrey);
 }
 
-.pageTitle__meta {
+.pageTitle__meta p {
   font-size: 14px;
   font-weight: normal;
   line-height: 1.43;
@@ -229,8 +230,6 @@ main {
 
 
 /*======================================================================
-    BUILDER BLOCK
-    👇
     fullWidthGallery
 ======================================================================*/
 
@@ -239,7 +238,8 @@ main {
   width: 100%;
 }
 
-/* @media screen and (min-width: 1280px) {
+/*    a little media query to control the height of the slides, not sure yet though.
+@media screen and (min-width: 1280px) {
   .fullWidthGallery__slides {
     height: 800px
   }
@@ -247,78 +247,82 @@ main {
 
 
 /*======================================================================
-    EVERYTHING ELSE I HAVEN'T SORTED YET
-    todo: check these are actually used anywhere (probably not)
+    twoColumnCopy BLOCK
 ======================================================================*/
 
-.tags {
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 0.075em;
-  font-size: .75rem;
-  font-weight: 600;
+.twoColumnCopy {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
 
-.text {
-  line-height: 1.5em;
-}
-.text p,
-.text figure,
-.text ul,
-.text ol {
-  margin-bottom: 1.5em;
-}
-.text h2 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-top: 3rem;
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-.text > *:first-child {
-  margin-top: 0;
-}
-.text a {
-  position: relative;
-  white-space: nowrap;
-  font-weight: 500;
-  z-index: 1;
-  display: inline-block;
-  border-bottom: 2px solid #000;
-}
-.text figure {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-.text img {
-  width: 100%;
+.twoColumnCopy h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--color--dkGrey);
+  margin-bottom: var(--riddim);
 }
 
-.footer {
-  padding: 1.5rem 5vw 10vh;
-  text-align: center;
-  max-width: var(--content-width);
-  margin: 0 auto;
-  line-height: 1.5em;
-}
-.footer a {
-  display: inline-block;
-  font-size: .875rem;
-}
-.footer > a {
-  margin-bottom: 1.5rem;
-  border-top: 2px solid #000;
-  width: 16.5rem;
-  padding-top: .5rem;
+.twoColumnCopy h2 {
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.3;
+  color: var(--color--dkGrey);
 }
 
-.social a {
-  margin: 0 .75rem;
-  padding: .5rem 1rem;
-  border: 2px solid #000;
-  width: 7.5rem;
+.twoColumnCopy h3 {
+  opacity: 0.5;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 2;
+  color: var(--color--black);
+  margin-bottom: calc(var(--riddim) / 2);
 }
-.social a:hover {
-  background: #000;
-  color: #fff;
+
+.twoColumnCopy__primary {
+  max-width: 620px;
 }
+
+.twoColumnCopy__primary p {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  color: var(--color--dkGrey);
+}
+
+.twoColumnCopy__secondary {
+  max-width: 296px;
+  text-align: right;
+}
+
+.twoColumnCopy__secondary p {
+  font-size: 12px;
+  line-height: 1.67;
+  letter-spacing: normal;
+  color: var(--color--dkGrey);
+}
+
+
+/*======================================================================
+    BUILDER STACK
+    How should elements behave sat beside each other?
+======================================================================*/
+
+.fullWidthGallery + .twoColumnCopy {
+  /* twoColumnCopy below a fullWidthGallery */
+  margin-top: calc(var(--riddim) * 6);
+}
+
+.fullWidthGallery + .twoColumnCopy .twoColumnCopy__primary,
+.fullWidthGallery + .twoColumnCopy .twoColumnCopy__secondary,
+.twoColumnCopy + .twoColumnCopy .twoColumnCopy__primary,
+.twoColumnCopy + .twoColumnCopy .twoColumnCopy__secondary {
+  /* twoColumnCopy__prim/sec nested in a twoColumnCopy below a fullWidthGallery */
+  /* AND */
+  /* multiple twoColumnCopy's sat atop each other */
+  /* -- */
+  /* this level of nonsense is necessary to target the containers themselves */
+  border-top: 1px solid var(--color--ltGrey);
+  padding: calc(var(--riddim) * 6) 0;
+}
+
