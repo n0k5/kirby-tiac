@@ -57,6 +57,18 @@ img {
   width: 100%;
 }
 
+/*======================================================================
+    CONTAINER
+======================================================================*/
+
+.container {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  display: grid;
+  padding-left: calc(var(--riddim) * 2) !important;
+  padding-right: calc(var(--riddim) * 2) !important;
+}
+
 
 /*======================================================================
     FLICKITY
@@ -130,17 +142,6 @@ img {
 
 
 /*======================================================================
-    CONTAINER
-======================================================================*/
-
-.container {
-  max-width: var(--content-width);
-  margin: 0 auto;
-  display: grid;
-}
-
-
-/*======================================================================
     MAIN
 ======================================================================*/
 
@@ -155,7 +156,7 @@ main {
 
 .header {
   background-color: var(--color--black);
-  padding: calc(var(--riddim) * 2);
+  padding: calc(var(--riddim) * 2) 0;
   position: fixed;
   width: 100%;
 }
