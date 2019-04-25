@@ -65,8 +65,8 @@ img {
   max-width: var(--content-width);
   margin: 0 auto;
   display: grid;
-  padding-left: calc(var(--riddim) * 2) !important;
-  padding-right: calc(var(--riddim) * 2) !important;
+  padding-left: var(--riddim) !important;
+  padding-right: var(--riddim) !important;
 }
 
 
@@ -191,7 +191,7 @@ main {
   font-weight: bold;
 }
 
-@media screen and (min-width: 40rem) {
+@media screen and (min-width: 640px) {
   .header .container {
     flex-direction: row;
     justify-content: space-between;
@@ -253,6 +253,7 @@ main {
 .twoColumnCopy {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  grid-gap: calc(var(--riddim) * 2);
 }
 
 .twoColumnCopy h1 {
@@ -278,16 +279,20 @@ main {
   margin-bottom: calc(var(--riddim) / 2);
 }
 
-.twoColumnCopy__primary {
-  max-width: 620px;
-}
-
 .twoColumnCopy__primary p {
+  /* TODO: crop this text with a 'read more' on mobile */
   font-size: 14px;
   font-weight: normal;
   line-height: 1.43;
   letter-spacing: normal;
   color: var(--color--dkGrey);
+}
+
+.twoColumnCopy__primary h1,
+.twoColumnCopy__primary h2,
+.twoColumnCopy__primary h3,
+.twoColumnCopy__primary p {
+  max-width: 620px;
 }
 
 .twoColumnCopy__secondary {
@@ -300,6 +305,34 @@ main {
   line-height: 1.67;
   letter-spacing: normal;
   color: var(--color--dkGrey);
+}
+
+@media screen and (max-width: 500px) {
+  .twoColumnCopy {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+
+  .twoColumnCopy__secondary {
+    text-align: left;
+  }
+
+  .twoColumnCopy h1 {
+    font-size: 20px;
+    letter-spacing: -0.2px;
+    margin-bottom: var(--riddim * 1.5);
+  }
+
+  .twoColumnCopy h2 {
+    font-size: 14px;
+    line-height: 1.43;
+  }
+
+  .twoColumnCopy h3 {
+    font-size: 12px;
+    line-height: 2;
+    margin-bottom: calc(var(--riddim) / 2);
+  }
 }
 
 
@@ -324,5 +357,20 @@ main {
   /* this level of nonsense is necessary to target the containers themselves */
   border-top: 1px solid var(--color--ltGrey);
   padding: calc(var(--riddim) * 6) 0;
+}
+
+@media screen and (max-width: 500px) {
+  .fullWidthGallery + .twoColumnCopy .twoColumnCopy__primary,
+  .twoColumnCopy + .twoColumnCopy .twoColumnCopy__primary {
+    /* less padding on the above elements */
+    padding: calc(var(--riddim) * 3) 0;
+  }
+
+  .fullWidthGallery + .twoColumnCopy .twoColumnCopy__secondary,
+  .twoColumnCopy + .twoColumnCopy .twoColumnCopy__secondary {
+    /* remove top border on the above elements */
+    border-top: 0;
+    padding: 0 0 calc(var(--riddim) * 3);
+  }
 }
 

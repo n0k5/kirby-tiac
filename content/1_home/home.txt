@@ -23,7 +23,7 @@ Content:
     
     ## Currently helping to create the vision of how modern education looks and feels across the world at EF in Lucerne, CH. Into business, culture, art, photography, reading and writing.
   secondarycopy: |
-    ### Capabilities
+    ### Capabilities
     
     Identity Design
     Design for Screen
