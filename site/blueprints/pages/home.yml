@@ -16,6 +16,8 @@ columns:
             extends: blocks/gallery
           twoColumnCopy:
             extends: blocks/twoColumnCopy
+          grid:
+            extends: blocks/grid
 
   - width: 1/3
     sections:

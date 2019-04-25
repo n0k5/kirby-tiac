@@ -1,0 +1,19 @@
+label: Grid
+fields:
+  upload:
+    type: files
+    label: Included Photographs
+    layout: cards
+  captions:
+    label: Captions
+    type: toggle
+    text: Show captions next to each image?
+    width: 1/2
+  color:
+    label: Grid Background Colour (optional)
+    type: color
+    editableAlpha: false
+    default: "#efefef"
+    presets:
+      - "#efefef"
+    width: 1/2
