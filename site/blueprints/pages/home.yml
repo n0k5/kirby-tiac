@@ -12,8 +12,8 @@ columns:
         type: builder
         label: Content
         fieldsets:
-          fullWidthGallery:
-            extends: blocks/fullWidthGallery
+          gallery:
+            extends: blocks/gallery
           twoColumnCopy:
             extends: blocks/twoColumnCopy
 

@@ -1,4 +1,4 @@
-var flkty = new Flickity( '.fullWidthGallery__slides', {
+var flkty = new Flickity( '.gallery__slides', {
   imagesLoaded: true,
   percentPosition: false
 });

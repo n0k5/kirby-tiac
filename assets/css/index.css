@@ -230,17 +230,17 @@ main {
 
 
 /*======================================================================
-    fullWidthGallery
+    gallery
 ======================================================================*/
 
-.fullWidthGallery__slides div {
+.gallery--fullWidth div {
   line-height: 0;
   width: 100%;
 }
 
 /*    a little media query to control the height of the slides, not sure yet though.
 @media screen and (min-width: 1280px) {
-  .fullWidthGallery__slides {
+  .gallery--fullWidth {
     height: 800px
   }
 } */
@@ -341,16 +341,16 @@ main {
     How should elements behave sat beside each other?
 ======================================================================*/
 
-.fullWidthGallery + .twoColumnCopy {
-  /* twoColumnCopy below a fullWidthGallery */
+.gallery + .twoColumnCopy {
+  /* twoColumnCopy below a gallery */
   margin-top: calc(var(--riddim) * 6);
 }
 
-.fullWidthGallery + .twoColumnCopy .twoColumnCopy__primary,
-.fullWidthGallery + .twoColumnCopy .twoColumnCopy__secondary,
+.gallery + .twoColumnCopy .twoColumnCopy__primary,
+.gallery + .twoColumnCopy .twoColumnCopy__secondary,
 .twoColumnCopy + .twoColumnCopy .twoColumnCopy__primary,
 .twoColumnCopy + .twoColumnCopy .twoColumnCopy__secondary {
-  /* twoColumnCopy__prim/sec nested in a twoColumnCopy below a fullWidthGallery */
+  /* twoColumnCopy__prim/sec nested in a twoColumnCopy below a gallery */
   /* AND */
   /* multiple twoColumnCopy's sat atop each other */
   /* -- */
@@ -360,13 +360,13 @@ main {
 }
 
 @media screen and (max-width: 500px) {
-  .fullWidthGallery + .twoColumnCopy .twoColumnCopy__primary,
+  .gallery + .twoColumnCopy .twoColumnCopy__primary,
   .twoColumnCopy + .twoColumnCopy .twoColumnCopy__primary {
     /* less padding on the above elements */
     padding: calc(var(--riddim) * 3) 0;
   }
 
-  .fullWidthGallery + .twoColumnCopy .twoColumnCopy__secondary,
+  .gallery + .twoColumnCopy .twoColumnCopy__secondary,
   .twoColumnCopy + .twoColumnCopy .twoColumnCopy__secondary {
     /* remove top border on the above elements */
     border-top: 0;

@@ -1,0 +1,28 @@
+label: Gallery
+fields:
+  gallery:
+    type: pages
+    label: Included Projects
+    layout: cards
+  captions:
+    label: Display Captions?
+    type: toggle
+    text:
+      - 'No'
+      - 'Yes'
+    width: 1/3
+  galleryWidth:
+    label: Width
+    type: toggle
+    text:
+      - Contained
+      - Full Width
+    width: 1/3
+  color:
+    label: Background Colour (optional)
+    type: color
+    editableAlpha: false
+    default: '#efefef'
+    presets:
+      - '#efefef'
+    width: 1/3

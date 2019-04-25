@@ -7,14 +7,15 @@ Content:
 - 
   gallery:
     - projects/landscape
-    - projects/waterfall
     - projects/animals
+    - projects/waterfall
   captions: 'true'
-  carousel: 'true'
+  gallerywidth: 'true'
   color: null
+  carousel: 'false'
   toggle: true
-  _key: fullWidthGallery
-  _uid: fullWidthGallery_1552334731566_297
+  _key: gallery
+  _uid: gallery_1552334731566_297
 - 
   primarycopy: |
     ### Designing and directing across identity, screen & print

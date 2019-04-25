@@ -6,7 +6,8 @@ fields:
   primaryCopy:
     type: textarea
     label: Primary Copy
-    size: small
+    size: medium
+    width: 2/3
     buttons:
       - headlines
       - link
@@ -16,6 +17,7 @@ fields:
     type: textarea
     label: Secondary Copy
     size: small
+    width: 1/3
     buttons:
       - headlines
       - link
