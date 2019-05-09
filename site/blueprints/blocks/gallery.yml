@@ -1,8 +1,8 @@
 label: Gallery
 fields:
   gallery:
-    type: pages
-    label: Included Projects
+    type: files
+    label: Images
     layout: cards
   captions:
     label: Display Captions?

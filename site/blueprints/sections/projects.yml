@@ -1,12 +1,12 @@
 type: pages
 headline: Projects
-parent: site.find("photography")
+parent: site.find("projects")
 size: tiny
 info: "{{ page.images.count }} image(s)"
 layout: cards
-template: album
-empty: No albums yet
+template: project
+empty: No projects yet
 image:
-  query: page.cover
+  query: page.fields.cover # todo: fix this
   cover: true
   ratio: 5/4

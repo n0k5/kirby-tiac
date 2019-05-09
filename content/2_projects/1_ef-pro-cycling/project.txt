@@ -1,0 +1,62 @@
+Title: EF Pro Cycling
+
+----
+
+Content: 
+
+- 
+  gallery:
+    - 00evmwq.jpg
+    - omfzin0.jpg
+    - rv8kdkl.jpg
+    - txchrqk.jpg
+  captions: 'false'
+  gallerywidth: 'false'
+  color: '#efefef'
+  _key: gallery
+  _uid: gallery_1557424872702_247
+
+----
+
+Cover: 
+
+- clouds-eat-mountain-400x265-q90.jpg
+
+----
+
+Categories: Identity Design, Design for Screen
+
+----
+
+Description: 
+
+----
+
+Tags: 
+
+- 
+  text: Identity Design
+  value: Identity Design
+- 
+  text: Design for Screen
+  value: Design for Screen
+
+----
+
+Contactemail: 
+
+----
+
+Bio: 
+
+----
+
+Sociallinks: 
+
+----
+
+Author: 
+
+----
+
+Headline: 

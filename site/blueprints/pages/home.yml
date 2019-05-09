@@ -5,57 +5,68 @@ icon: 🧠
 options:
   status: false
 
-columns:
-    main:
-      width: 2/3
-      fields:
-        content:
-          type: builder
-          label: Content
-          fieldsets:
-            gallery:
-              extends: blocks/gallery
-            twoColumnCopy:
-              extends: blocks/twoColumnCopy
-            grid:
-              extends: blocks/grid
+tabs:
 
-    sidebar:
-      width: 1/3
-      sections:
-        meta:
-          type: fields
-          fields:
-            contactEmail:
-              type: email
-              label: Email
-            bio:
-              type: textarea
-              label: Bio
-              placeholder: Tell the world what you have going on in your life.
-              minlength: 10
-              maxlength: 85
-              size: small
-              buttons: false
-            socialLinks:
-              type: structure
-              label: Social Media
-              fields:
-                title:
-                  label: Title
-                  type: text
-                  placeholder: Twitter
-                url:
-                  label: URL
-                  type: text
-                  placeholder: https://
-                icon:
-                  label: Icon
-                  type: text
-                  placeholder: fa-twitter
-        pageImages:
-          type: files
-          headline: Available Images
-          layout: list
-          info: "{{ file.dimensions }}"
-          template: image
+  # main content
+  content:
+    label: Content
+    columns:
+      main:
+        width: 2/3
+        fields:
+          content:
+            type: builder
+            label: Content
+            fieldsets:
+              gallery:
+                extends: blocks/gallery
+              twoColumnCopy:
+                extends: blocks/twoColumnCopy
+              grid:
+                extends: blocks/grid
+
+      sidebar:
+        width: 1/3
+        sections:
+          meta:
+            type: fields
+            fields:
+              contactEmail:
+                type: email
+                label: Email
+              bio:
+                type: textarea
+                label: Bio
+                placeholder: Tell the world what you have going on in your life.
+                minlength: 10
+                maxlength: 85
+                size: small
+                buttons: false
+              socialLinks:
+                type: structure
+                label: Social Media
+                fields:
+                  title:
+                    label: Title
+                    type: text
+                    placeholder: Twitter
+                  url:
+                    label: URL
+                    type: text
+                    placeholder: https://
+                  icon:
+                    label: Icon
+                    type: text
+                    placeholder: fa-twitter
+
+  # image uploads
+  pageImages:
+    label: Images
+    sections:
+      pageImages:
+        width: 1/3
+        type: files
+        headline: Available Images
+        layout: list
+        info: "{{ file.dimensions }}"
+        template: image

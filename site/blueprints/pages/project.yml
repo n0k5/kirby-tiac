@@ -1,0 +1,52 @@
+title: Project
+
+icon: 🖼
+
+status:
+  draft: true
+  listed: true
+
+tabs:
+
+  # main content
+  content:
+    label: Content
+    columns:
+      main:
+        width: 2/3
+        fields:
+          content:
+            type: builder
+            label: Content
+            fieldsets:
+              gallery:
+                extends: blocks/gallery
+              twoColumnCopy:
+                extends: blocks/twoColumnCopy
+              grid:
+                extends: blocks/grid
+
+      sidebar:
+        width: 1/3
+        sections:
+          meta:
+            type: fields
+            fields:
+              cover:
+                type: files
+                template: image
+                multiple: false
+              categories:
+                type: tags
+
+  # image uploads
+  pageImages:
+    label: Images
+    sections:
+      pageImages:
+        width: 1/3
+        type: files
+        headline: Available Images
+        layout: list
+        info: "{{ file.dimensions }}"
+        template: image

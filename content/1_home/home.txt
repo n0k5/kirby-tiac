@@ -6,9 +6,10 @@ Content:
 
 - 
   gallery:
-    - projects/landscape
-    - projects/animals
-    - projects/waterfall
+    - 00evmwq.jpg
+    - omfzin0.jpg
+    - rv8kdkl.jpg
+    - txchrqk.jpg
   captions: 'true'
   gallerywidth: 'true'
   color: null
