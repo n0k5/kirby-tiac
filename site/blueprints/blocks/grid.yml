@@ -1,6 +1,6 @@
 label: Grid
 fields:
-  upload:
+  gridImages:
     type: files
     label: Included Photographs
     layout: cards

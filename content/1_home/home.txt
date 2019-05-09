@@ -51,6 +51,17 @@ Content:
     2007–2010
   _key: twoColumnCopy
   _uid: twoColumnCopy_1556127829273_444
+- 
+  gridimages:
+    - erasmus.png
+    - may-ninth.png
+  captions: 'true'
+  color: '#efefef'
+  upload:
+    - erasmus.png
+    - may-ninth.png
+  _key: grid
+  _uid: grid_1556737864612_418
 
 ----
 
@@ -81,15 +92,3 @@ Sociallinks:
   title: Behance
   url: https://www.behance.net/thisisandycooke
   icon: fa-behance
-
-----
-
-Text: 
-
-----
-
-Email: 
-
-----
-
-Textarea: 

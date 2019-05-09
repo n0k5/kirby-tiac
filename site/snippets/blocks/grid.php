@@ -1,17 +1,11 @@
-<div class="gallery <?= ($data->galleryWidth()->value() == 'true' ? 'gallery--fullWidth' : 'gallery--contained') ?>">
-  <div class="gallery__slides">
-    <!-- todo: use srcset here -->
-    <!-- should allow me to hotswap images depending on device size -->
-    <!-- https://getkirby.com/docs/guide/templates/resize-images-on-the-fly#responsive-images -->
+<div class="grid">
 
-    <?php foreach($data->gallery() as $items): ?>
-      <?php foreach($items as $item): ?>
+  <!-- <?php dump($data->gridImages()->toFile()); ?> -->
 
-          <?php echo page($item)->cover()->crop(1280, 694, 'center'); ?>
+  <?php foreach($data->gridImages()->toFiles() as $file): ?>
+    <div class="grid__image">
+        <img src="<?= $file->url() ?>" alt="<?= $file->alt() ?>">
+    </div>
+  <?php endforeach; ?>
 
-      <?php endforeach; ?>
-    <?php endforeach; ?>
-  </div>
-
-  <p class="flickity-caption"></p>
 </div>
