@@ -6,7 +6,6 @@ Content:
 
 - 
   gallery:
-    - 00evmwq.jpg
     - omfzin0.jpg
     - rv8kdkl.jpg
     - txchrqk.jpg
@@ -15,12 +14,33 @@ Content:
   color: '#efefef'
   _key: gallery
   _uid: gallery_1557424872702_247
+- 
+  primarycopy: |
+    ### When one global phenomenon meets another
+    
+    # Exploring the world with EF Pro Cycling
+    
+    ## I led the project that established the 2019 identity design for EF’s biggest global marketing initiative: ownership and lead sponsorship of a pro cycling team.
+  secondarycopy: |
+    ### Role
+    Creative Lead
+    
+    ### Period
+    2018–19
+    
+    ### Agency
+    EF Education First
+    
+    ### Link
+    (link: http://www.efprocycling.com/ text: www.efprocycling.com)
+  _key: twoColumnCopy
+  _uid: twoColumnCopy_1558379541233_1799
 
 ----
 
 Cover: 
 
-- clouds-eat-mountain-400x265-q90.jpg
+- jon-snow.jpg
 
 ----
 

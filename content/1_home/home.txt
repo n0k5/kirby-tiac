@@ -6,10 +6,9 @@ Content:
 
 - 
   gallery:
-    - 00evmwq.jpg
+    - jon-snow.jpg
     - omfzin0.jpg
-    - rv8kdkl.jpg
-    - txchrqk.jpg
+    - traffic-lights.jpg
   captions: 'true'
   gallerywidth: 'true'
   color: null
