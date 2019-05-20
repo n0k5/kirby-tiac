@@ -41,7 +41,7 @@ tabs:
 
   # image uploads
   pageImages:
-    label: Images
+    label: Media
     sections:
       pageImages:
         width: 1/3

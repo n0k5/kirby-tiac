@@ -61,7 +61,7 @@ tabs:
 
   # image uploads
   pageImages:
-    label: Images
+    label: Media
     sections:
       pageImages:
         width: 1/3
@@ -69,4 +69,4 @@ tabs:
         headline: Available Images
         layout: list
         info: "{{ file.dimensions }}"
-        template: image
+        # template: image

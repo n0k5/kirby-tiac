@@ -1,6 +1,6 @@
-  </div>
+  </div> <!-- </page> -->
 
-  <footer class="footer">
+  <!-- <footer class="footer">
     <a href="<?= url() ?>">&copy; <?= date('Y') ?> / <?= $site->title() ?></a>
 
     <?php if ($about = page('about')): ?>
@@ -10,7 +10,7 @@
       <?php endforeach ?>
     </nav>
     <?php endif ?>
-  </footer>
+  </footer> -->
 
   <?= js('assets/js/app.js') ?>
 </body>

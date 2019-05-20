@@ -1,12 +1,8 @@
 <?php snippet('header') ?>
 
 <main>
-  <header class="intro">
-    <h1><?= $page->title() ?></h1>
-  </header>
-  <div class="text">
-    <?= $page->text()->kt() ?>
-  </div>
+  <?php snippet('pageTitle'); ?>
+  <?php snippet('builder') ?>
 </main>
 
 <?php snippet('footer') ?>

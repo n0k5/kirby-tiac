@@ -2,7 +2,7 @@
 
 <main>
   <header class="intro">
-    <h1><?= $page->title() ?></h1>
+    <h1><?= $page->title() ?></h1> I am photography.php
   </header>
 
   <ul class="albums"<?= attr(['data-even' => $page->children()->listed()->isEven()], ' ') ?>>

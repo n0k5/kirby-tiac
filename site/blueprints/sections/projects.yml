@@ -2,11 +2,11 @@ type: pages
 headline: Projects
 parent: site.find("projects")
 size: tiny
-info: "{{ page.images.count }} image(s)"
+info: "{{ page.categories }}"
 layout: cards
 template: project
 empty: No projects yet
 image:
-  query: page.fields.cover # todo: fix this
+  query: page.cover.toFile # todo: fix this
   cover: true
   ratio: 5/4
