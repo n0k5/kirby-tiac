@@ -1,0 +1,19 @@
+label: Copy/Text Grid
+fields:
+  copyBlocks:
+    type: builder
+    label: Blocks
+    columns: 2
+    fieldsets:
+      copyBlock:
+        label: Block
+        fields:
+          copy:
+            label: Copy
+            type: textarea
+            size: small
+            buttons:
+              - headlines
+              - link
+              - email
+              - ul

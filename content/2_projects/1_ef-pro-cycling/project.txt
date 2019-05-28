@@ -35,12 +35,55 @@ Content:
     (link: http://www.efprocycling.com/ text: www.efprocycling.com)
   _key: twoColumnCopy
   _uid: twoColumnCopy_1558379541233_1799
+- 
+  copyblocks:
+    - 
+      copy: |
+        ### 01
+        ## Problem
+        
+        Those untangible, unseen and unpredictable moments between people are what makes the difference between an unforgettable experience and customers forgetting Ultimate Break.
+      _key: copyBlock
+      _uid: copyBlock_1559065335180_366
+    - 
+      copy: |
+        ### 02
+        ## Challenges
+        
+        There’s a real need to instill confidence in not only the product itself, but in the customer too. EFUB enables individuals to grow personally through life experience, which is a big responsibility.
+      _key: copyBlock
+      _uid: copyBlock_1559065362841_405
+    - 
+      copy: |
+        ### 03
+        ## Thinking
+        
+        FUN. It’s a word that in branding, we are told to avoid. But there was no way of getting around the pure fun aspect of EFUB. It has to communicate joy, laughter, enjoyment, excitement and play.
+      _key: copyBlock
+      _uid: copyBlock_1559065371074_444
+    - 
+      copy: |
+        ### 04
+        ## Solution
+        
+        Through photography, copywriting and EF’s heritage, authencitiy is a buzz word that is still relevant to the EFUB customer base. It has to appear accesible through it’s realness.
+      _key: copyBlock
+      _uid: copyBlock_1559065379019_483
+  _key: copyGrid
+  _uid: copyGrid_1559065333558_345
+- 
+  gallery:
+    - b2638173143833.5bffa78c22728.jpg
+    - 56cc0e73143833.5bffa78c21e84.jpg
+  captions: 'true'
+  gallerywidth: 'true'
+  color: '#efefef'
+  _key: gallery
+  _uid: gallery_1559067410899_505
 
 ----
 
 Cover: 
-
-- d7705373143833.5bffa5f477e9f.jpg
 
 ----
 
@@ -54,29 +97,9 @@ Description:
 
 Tags: 
 
-- 
+-
   text: Identity Design
   value: Identity Design
-- 
+-
   text: Design for Screen
   value: Design for Screen
-
-----
-
-Contactemail: 
-
-----
-
-Bio: 
-
-----
-
-Sociallinks: 
-
-----
-
-Author: 
-
-----
-
-Headline: 

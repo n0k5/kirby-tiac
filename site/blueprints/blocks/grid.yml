@@ -1,4 +1,4 @@
-label: Grid
+label: Photo Grid
 fields:
   gridImages:
     type: files

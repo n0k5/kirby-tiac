@@ -8,7 +8,7 @@
     GLOBAL VARIABLES AND OVERRIDES
 ======================================================================*/
 :root {
-  --content-width: 80rem;
+  --content-width: 940px;
 
   /* Colours */
   --color--primary: #fff;
@@ -27,6 +27,41 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+
+/*======================================================================
+    TYPOGRAPHY
+======================================================================*/
+
+h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color--dkGrey);
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.3;
+  color: var(--color--dkGrey);
+}
+
+h3 {
+  opacity: 0.5;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1.6;
+  color: var(--color--black);
+}
+
+p {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  color: var(--color--dkGrey);
 }
 
 
@@ -212,21 +247,8 @@ main {
   padding: calc(var(--riddim) * 4) 0;
 }
 
-.pageTitle__pageName h1 {
-    font-size: 24px;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: normal;
-    color: var(--color--dkGrey);
-}
-
 .pageTitle__meta p {
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 1.43;
-  letter-spacing: normal;
   text-align: right;
-  color: var(--color--dkGrey);
 }
 
 .pageTitle__meta ul {
@@ -280,35 +302,7 @@ main {
 }
 
 .twoColumnCopy h1 {
-  font-size: 24px;
-  font-weight: 600;
-  color: var(--color--dkGrey);
   margin-bottom: var(--riddim);
-}
-
-.twoColumnCopy h2 {
-  font-size: 20px;
-  font-weight: normal;
-  line-height: 1.3;
-  color: var(--color--dkGrey);
-}
-
-.twoColumnCopy h3 {
-  opacity: 0.5;
-  font-size: 12px;
-  font-weight: normal;
-  line-height: 2;
-  color: var(--color--black);
-  margin-bottom: calc(var(--riddim) / 2);
-}
-
-.twoColumnCopy__primary p {
-  /* TODO: crop this text with a 'read more' on mobile */
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 1.43;
-  letter-spacing: normal;
-  color: var(--color--dkGrey);
 }
 
 .twoColumnCopy__primary h1,
@@ -319,15 +313,13 @@ main {
 }
 
 .twoColumnCopy__secondary {
-  max-width: 296px;
+  /* max-width: 296px; */
   text-align: right;
 }
 
 .twoColumnCopy__secondary p {
   font-size: 12px;
-  line-height: 1.67;
-  letter-spacing: normal;
-  color: var(--color--dkGrey);
+  line-height: 1.7;
 }
 
 .twoColumnCopy__secondary p + h3 {
@@ -372,12 +364,30 @@ main {
   }
 }
 
+/*======================================================================
+    copyGrid BLOCK
+======================================================================*/
+.copyGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 64px 48px;
+}
+
+.copyGrid h2 {
+  font-weight: 600;
+}
+
+.copyGrid h2 + p {
+  margin-top: var(--riddim);
+}
+
 
 /*======================================================================
     BUILDER STACK
     How should elements behave sat beside each other?
 ======================================================================*/
 
+/* gallery BLOCK */
 .gallery + .twoColumnCopy {
   /* twoColumnCopy below a gallery */
   margin-top: calc(var(--riddim) * 6);
@@ -411,3 +421,8 @@ main {
   }
 }
 
+/* copyGrid BLOCK */
+.twoColumnCopy + .copyGrid {
+  border-top: 1px solid var(--color--ltGrey);
+  padding: calc(var(--riddim) * 6) 0;
+}
