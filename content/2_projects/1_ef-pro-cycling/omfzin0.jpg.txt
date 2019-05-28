@@ -1,9 +1,0 @@
-Caption: Testing 123
-
-----
-
-Alt: 
-
-----
-
-Template: image
