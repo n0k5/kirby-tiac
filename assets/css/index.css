@@ -11,9 +11,10 @@
   --content-width: 940px;
 
   /* Colours */
-  --color--primary: #fff;
+  --color--white: #fff;
   --color--black: #191919;
   --color--dkGrey: #3c3c3b;
+  --color--midDkGrey: #878787;
   --color--midGrey: #ededed;
   --color--ltGrey: #d8d8d8;
 
@@ -81,7 +82,7 @@ li {
 }
 
 a {
-  color: var(--color--primary);
+  color: var(--color--white);
   text-decoration: none;
 }
 
@@ -114,7 +115,7 @@ img {
   width: 56px !important;
   height: 56px !important;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-  background-color: var(--color--primary) !important;
+  background-color: var(--color--white) !important;
   opacity: 1 !important;
   font-size: 16px;
   font-weight: 600;
@@ -143,10 +144,10 @@ img {
 }
 
 .flickity-button:disabled {
-  border: solid 1px var(--color--primary);
+  border: solid 1px var(--color--midDkGrey);
   background: transparent !important;
   opacity: 1 !important;
-  color: var(--color--primary);
+  color: var(--color--midDkGrey);
   box-shadow: none;
 }
 
@@ -205,13 +206,13 @@ main {
 .header a {
   position: relative;
   font-size: .750rem;
-  color: var(--color--primary);
+  color: var(--color--white);
 }
 
 .header .logo {
   align-self: flex-end;
   text-align: right;
-  color: var(--color--primary);
+  color: var(--color--white);
 }
 
 .menu a {
@@ -223,7 +224,7 @@ main {
 }
 
 .menu a[aria-current] {
-  color: var(--color--primary);
+  color: var(--color--white);
   font-weight: 600;
 }
 
@@ -281,6 +282,34 @@ main {
 .gallery--fullWidth div {
   line-height: 0;
   width: 100%;
+}
+
+.gallery--contained .flickity-button.previous {
+  left: -96px !important;
+}
+
+.gallery--contained .flickity-button.next {
+  right: -96px !important;
+}
+
+/* @media screen and (max-width: 1180px) {
+  .gallery--contained .flickity-button.previous {
+    left: -70px !important;
+  }
+
+  .gallery--contained .flickity-button.next {
+    right: -70px !important;
+  }
+} */
+
+@media screen and (max-width: 1180px) {
+  .gallery--contained .flickity-button.previous {
+    left: 24px !important;
+  }
+
+  .gallery--contained .flickity-button.next {
+    right: 24px !important;
+  }
 }
 
 /*    a little media query to control the height of the slides, not sure yet though.

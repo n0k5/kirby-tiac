@@ -9,8 +9,8 @@ Content:
     - d7705373143833.5bffa5f477e9f.jpg
     - 5f31cf73143833.5c4b5251eb3f4.jpg
     - 8082c873143833.5bffb84f38010.jpg
-  captions: 'false'
-  gallerywidth: 'false'
+  captions: 'true'
+  gallerywidth: 'true'
   color: '#efefef'
   _key: gallery
   _uid: gallery_1557424872702_247
@@ -76,7 +76,7 @@ Content:
     - b2638173143833.5bffa78c22728.jpg
     - 56cc0e73143833.5bffa78c21e84.jpg
   captions: 'true'
-  gallerywidth: 'true'
+  gallerywidth: 'false'
   color: '#efefef'
   _key: gallery
   _uid: gallery_1559067410899_505
