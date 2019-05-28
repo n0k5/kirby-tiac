@@ -80,6 +80,28 @@ Content:
   color: '#efefef'
   _key: gallery
   _uid: gallery_1559067410899_505
+- 
+  primarycopy: |
+    ## Identity building blocks
+    
+    The Ultimate Break visual identity system is made up of seven core assets that work together to communicate the values and principles of the product. Each asset is drawn from the vast world of travel, and intended to evoke an emotional connection to the customer when used properly together in visual communications. All eaqually as important to the story as the other, the balance of visuals depend on the combination for the identity to be successful.
+  secondarycopy: |
+    ↳  Discover
+    *Define
+    Design
+    Deliver*
+  _key: twoColumnCopy
+  _uid: twoColumnCopy_1559070329475_601
+- 
+  gridimages:
+    - ba745b73143833.5bffa78cf3b66.jpg
+    - 8082c873143833.5bffb84f38010.jpg
+    - c4166873143833.5bffa78d01713.jpg
+    - d7705373143833.5bffa5f477e9f.jpg
+  captions: 'false'
+  color: '#efefef'
+  _key: grid
+  _uid: grid_1559070710265_666
 
 ----
 

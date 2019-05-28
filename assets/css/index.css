@@ -334,6 +334,10 @@ main {
   margin-bottom: var(--riddim);
 }
 
+.twoColumnCopy h2 + p {
+  margin-top: calc(var(--riddim) * 2);
+}
+
 .twoColumnCopy__primary h1,
 .twoColumnCopy__primary h2,
 .twoColumnCopy__primary h3,
@@ -349,6 +353,12 @@ main {
 .twoColumnCopy__secondary p {
   font-size: 12px;
   line-height: 1.7;
+}
+
+.twoColumnCopy__secondary p em {
+  font-style: normal;
+  opacity: 0.5;
+  color: var(--color--black);
 }
 
 .twoColumnCopy__secondary p + h3 {
