@@ -403,6 +403,34 @@ main {
   }
 }
 
+
+/*======================================================================
+    grid BLOCK
+======================================================================*/
+.imgGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+  padding-bottom: 64px;
+}
+
+.imgGrid__image {
+  background-size: cover;
+}
+
+.imgGrid__image img {
+  opacity: 0;
+}
+
+.imgGrid__caption p {
+  opacity: 0.5;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1.6;
+  color: var(--color--black);
+  margin-top: calc(var(--riddim) / 2);
+}
+
 /*======================================================================
     copyGrid BLOCK
 ======================================================================*/

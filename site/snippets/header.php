@@ -20,7 +20,6 @@
           <?php endforeach ?>
         </nav>
 
-        <a class="logo" href="mailto:<?= $page->contactEmail() ?>"><?= $page->contactEmail() ?></a>
+        <a class="logo" href="mailto:<?= page('home')->contactEmail() ?>"><?= page('home')->contactEmail() ?></a>
       </div>
     </header>
-
