@@ -1,9 +1,6 @@
 title: Site
 
 columns:
-  - width: 2/3
-    sections:
-      albums: sections/projects
   - width: 1/3
     sections:
       pages:
@@ -14,3 +11,6 @@ columns:
           - about
           - home
           - default
+  - width: 2/3
+    sections:
+      albums: sections/projects

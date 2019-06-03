@@ -7,6 +7,6 @@ layout: cards
 template: project
 empty: No projects yet
 image:
-  query: page.cover.toFile # todo: fix this (I think it's fixed actually)
+  query: page.cover.toFile
   cover: true
   ratio: 5/4

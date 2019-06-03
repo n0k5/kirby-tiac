@@ -24,6 +24,8 @@ tabs:
                 extends: blocks/twoColumnCopy
               grid:
                 extends: blocks/grid
+              copyGrid:
+                extends: blocks/copyGrid
 
       sidebar:
         width: 1/3
