@@ -1,4 +1,4 @@
-label: Gallery
+label: Carousel
 fields:
   gallery:
     type: files
