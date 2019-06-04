@@ -1,7 +1,13 @@
 <div class="gallery <?= ($data->galleryWidth()->value() == 'true' ? 'gallery--fullWidth' : 'gallery--contained container') ?>">
-  <div class="gallery--slides">
+  <div class="gallery--slides" style="background-color: <?= ($data->color()) ?>">
     <?php foreach($data->gallery()->toFiles() as $file): ?>
-      <img src="<?= $file->crop(1280, 694, 'center')->url() ?>" alt="<?= $file->caption() ?>">
+      <?php if($file->orientation() == 'landscape'): ?>
+        <img src="<?= $file->crop(1280, 694, 'center')->url() ?>" class="img--landscape" alt="<?= $file->caption() ?>">
+      <?php /*else: ?>
+        <!-- <div style="width: 100%; object-fit: contain;"><img src="<?= $file->resize(null, 694, 85)->url() ?>" class="img--portrait" alt="<?= $file->caption() ?>"></div> -->
+        <!-- todo: add support for portrait images -->
+        <?php */ ?>
+      <?php endif; ?>
     <?php endforeach; ?>
   </div>
 

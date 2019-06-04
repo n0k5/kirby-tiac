@@ -38,6 +38,13 @@ tabs:
                 type: files
                 template: image
                 multiple: false
+              projectThumbnail:
+                type: toggle
+                label: Thumbnail Orientation
+                text:
+                  - Landscape
+                  - Portrait
+                after: Affects the projects page
               categories:
                 type: tags
 

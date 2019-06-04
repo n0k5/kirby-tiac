@@ -5,9 +5,11 @@ fields:
     label: Included Photographs
     layout: cards
   captions:
-    label: Captions
+    label: Display Captions?
     type: toggle
-    text: Show captions next to each image?
+    text:
+      - 'No'
+      - 'Yes'
     width: 1/2
   color:
     label: Grid Background Colour (optional)
@@ -17,3 +19,10 @@ fields:
     presets:
       - "#efefef"
     width: 1/2
+  # layout:
+  #   type: toggle
+  #   label: Layout type
+  #   text:
+  #     - '4x4'
+  #     - '2x2'
+  #   width: 1/3
