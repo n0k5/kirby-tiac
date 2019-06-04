@@ -60,7 +60,7 @@ h3 {
 p {
   font-size: 14px;
   font-weight: normal;
-  line-height: 1.4;
+  line-height: 1.7;
   letter-spacing: normal;
   color: var(--color--dkGrey);
 }
@@ -90,9 +90,6 @@ strong, b {
   font-weight: 500;
 }
 
-img {
-  width: 100%;
-}
 
 /*======================================================================
     CONTAINER
@@ -279,6 +276,20 @@ main {
     gallery
 ======================================================================*/
 
+.gallery--slides {
+  max-height: 495px;
+}
+
+.gallery .img--landscape {
+  width: 100%;
+}
+
+.gallery .img--portrait {
+  /* width: 100%; */
+  height: 100%;
+  margin: var(--riddim);
+}
+
 .gallery--fullWidth div {
   line-height: 0;
   width: 100%;
@@ -292,16 +303,6 @@ main {
   right: -96px !important;
 }
 
-/* @media screen and (max-width: 1180px) {
-  .gallery--contained .flickity-button.previous {
-    left: -70px !important;
-  }
-
-  .gallery--contained .flickity-button.next {
-    right: -70px !important;
-  }
-} */
-
 @media screen and (max-width: 1180px) {
   .gallery--contained .flickity-button.previous {
     left: 24px !important;
@@ -311,13 +312,6 @@ main {
     right: 24px !important;
   }
 }
-
-/*    a little media query to control the height of the slides, not sure yet though.
-@media screen and (min-width: 1280px) {
-  .gallery--fullWidth {
-    height: 800px
-  }
-} */
 
 
 /*======================================================================
@@ -442,6 +436,10 @@ main {
 
 .copyGrid h2 {
   font-weight: 600;
+}
+
+.copyGrid h3 + h2 {
+  margin-top: calc(var(--riddim) / 2);
 }
 
 .copyGrid h2 + p {
