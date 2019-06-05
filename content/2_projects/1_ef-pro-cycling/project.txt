@@ -100,14 +100,74 @@ Content:
     - d7705373143833.5bffa5f477e9f.jpg
   captions: 'false'
   color: '#efefef'
+  layout: 'false'
   _key: grid
   _uid: grid_1559070710265_666
+- 
+  copyblocks:
+    - 
+      copy: |
+        ### 01
+        ## 80% female audience
+        
+        Millenial females make up the vast majority of the core EFUB audience. This is a huge tip and a major factor in how the make up of core assets in the visual identity system work together.
+      _key: copyBlock
+      _uid: copyBlock_1559586541041_781
+    - 
+      copy: |
+        ### 02
+        ## Solo & group travel
+        
+        Communicating the benefits of group travel to individuals is a big part of the messaging effort, and finding this balance in the photography is a continued exercise in selling the product.
+      _key: copyBlock
+      _uid: copyBlock_1559586569849_835
+    - 
+      copy: |
+        ### 03
+        ## Embrace irreverence
+        
+        EFUB’s trips represent times in young people’s lives where they want to let loose, have fun and be in the moment. It’s important that the product doesn’t take itself too seriously.
+      _key: copyBlock
+      _uid: copyBlock_1559586583383_874
+    - 
+      copy: |
+        ### 04
+        ## U.G.C. vs P.G.C.
+        
+        The authenticity of real traveller’s content and the contrasting professional content provides a challenge of when and where to be raw and real versus aspirational in visual communications.
+      _key: copyBlock
+      _uid: copyBlock_1559586600095_913
+  _key: copyGrid
+  _uid: copyGrid_1559586538102_760
+- 
+  gallery:
+    - ad7b1f73143833.5bffa78b40402.jpg
+    - 56cc0e73143833.5bffa78c21e84.jpg
+    - b2638173143833.5bffa78c22728.jpg
+  captions: 'true'
+  gallerywidth: 'false'
+  color: '#e0e0e0'
+  _key: gallery
+  _uid: gallery_1559586622182_974
+- 
+  gridimages:
+    - 2e15fe73143833.5c35bb36ca335.jpg
+    - f9edfe73143833.5c35bb36c9f23.jpg
+  captions: 'false'
+  color: '#e0e0e0'
+  layout: 'true'
+  _key: grid
+  _uid: grid_1559586728387_1565
 
 ----
 
 Cover: 
 
 - f9edfe73143833.5c35bb36c9f23.jpg
+
+----
+
+Projectthumbnail: false
 
 ----
 
