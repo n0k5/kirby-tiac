@@ -1,4 +1,12 @@
-.text {
-  max-width: 35rem;
-  margin: 0 auto;
+.projects {
+  margin-top: calc(var(--riddim) * 4);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: calc(var(--riddim) * 2);
+}
+
+.project {
+  background: no-repeat;
+  background-size: cover;
+  min-height: 240px;
 }

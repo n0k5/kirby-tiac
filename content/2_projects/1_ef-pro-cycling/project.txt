@@ -151,6 +151,7 @@ Content:
   _uid: gallery_1559586622182_974
 - 
   gridimages:
+    - b2638173143833.5bffa78c22728.jpg
     - 2e15fe73143833.5c35bb36ca335.jpg
     - f9edfe73143833.5c35bb36c9f23.jpg
   captions: 'false'
@@ -163,7 +164,7 @@ Content:
 
 Cover: 
 
-- f9edfe73143833.5c35bb36c9f23.jpg
+- 8082c873143833.5bffb84f38010.jpg
 
 ----
 

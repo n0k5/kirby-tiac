@@ -8,6 +8,7 @@ Content:
   gallery:
     - jon-snow.jpg
     - omfzin0.jpg
+    - tornado.jpg
     - traffic-lights.jpg
   captions: 'true'
   gallerywidth: 'true'
